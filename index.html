@@ -110,19 +110,37 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="section__list2 list">
             <li class="section__item2 section-product">
-              <img src="./images/img-1.jpg" alt="Написание кода" width="370" height="294" />
+              <img
+                srcset="./images/doing1-x1.jpg 1x, ./images/doing1-x2.jpg 2x"
+                src="./images/doing1-x1.jpg"
+                alt="Написание кода"
+                width="370"
+                height="294"
+              />
               <div class="product">
                 <p class="product__actions">Десктопні додатки</p>
               </div>
             </li>
             <li class="section__item2 section-product">
-              <img src="./images/img-2.jpg" alt="Выбор макета" width="370" height="294" />
+              <img
+                srcset="./images/doing2-x1.jpg 1x, ./images/doing2-x2.jpg 2x"
+                src="./images/doing2-x1.jpg"
+                alt="Выбор макета"
+                width="370"
+                height="294"
+              />
               <div class="product">
                 <p class="product__actions">Мобільні додатки</p>
               </div>
             </li>
             <li class="section__item2 section-product">
-              <img src="./images/img-3.jpg" alt="Выбор цвета" width="370" height="294" />
+              <img
+                srcset="./images/doing3-x1.jpg 1x, ./images/doing3-x2.jpg 2x"
+                src="./images/doing3-x1.jpg"
+                alt="Выбор цвета"
+                width="370"
+                height="294"
+              />
               <div class="product">
                 <p class="product__actions">Дизайнерські рішення</p>
               </div>
@@ -136,11 +154,21 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="section-works__pictures list">
             <li class="section-works__image">
-              <img class="img" srcset=" ./images/teammate1-desktop-x1.jpg 270w,
-              ./images/teammate1-desktop-x2.jpg 540w, ./images/teammate1-tablet-x1.jpg 354w,
-              ./images/teammate1-tablet-x2.jpg 708w, ./images/teammate1-mobile-x1.jpg 450w,
-              ./images/teammate1-mobile-x2.jpg 900w" " src="./images/teammate1-mobile-x1.jpg"
-              alt="Product Designer" width="270" height="260" />
+              <img
+                class="img"
+                srcset="
+                  ./images/teammate1-desktop-x1.jpg 270w,
+                  ./images/teammate1-desktop-x2.jpg 540w,
+                  ./images/teammate1-tablet-x1.jpg  354w,
+                  ./images/teammate1-tablet-x2.jpg  708w,
+                  ./images/teammate1-mobile-x1.jpg  450w,
+                  ./images/teammate1-mobile-x2.jpg  900w
+                "
+                src="./images/teammate1-mobile-x1.jpg"
+                alt="Product Designer"
+                width="270"
+                height="260"
+              />
               <div class="team-box">
                 <h3 class="title">Игорь Демьяненко</h3>
                 <p class="text" lang="en">Product Designer</p>
@@ -334,7 +362,7 @@
       </section>
       <section class="section-coworker page-coworker">
         <div class="container">
-          <!-- <h2 class="section__title">Постійні клієнти</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="section-coworker__pic list">
             <li class="section-coworker__icon">
               <a href="" class="section-coworker__link link">
@@ -378,7 +406,7 @@
                 </svg>
               </a>
             </li>
-          </ul> -->
+          </ul>
         </div>
       </section>
     </main>
