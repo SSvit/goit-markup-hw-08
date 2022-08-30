@@ -60,21 +60,20 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 /* Головний контейнер */
 .container {
-  width: 100%;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   /* align-items: baseline; */
   /* outline: 2px solid palevioletred; */
 }
+
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -86,6 +85,19 @@ img {
   .container {
     max-width: 1200px;
   }
+}
+.container-flex {
+  align-items: baseline;
+}
+
+.page-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page {
+  display: none;
+  padding-top: 0;
 }
 
 /* Приховує заголовок */
@@ -161,7 +173,6 @@ img {
 }
 
 .link {
-  display: flex;
   text-decoration: none;
   transition-duration: 1250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -250,8 +261,8 @@ img {
 
 /*------------------------ Секція 2 --------------------*/
 .section__list {
-  list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
 }
@@ -263,6 +274,7 @@ img {
 }
 .section__list .title {
   /* margin-top: 30px; */
+  text-align: center;
   margin-bottom: 10px;
   color: var(--primary-text-color);
   font-weight: 700;
@@ -272,19 +284,14 @@ img {
   text-transform: uppercase;
 }
 
-.section__item {
-  flex-basis: calc((100% - 90px) / 4);
-}
 .section__item::before {
   display: block;
   content: "";
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   /* display: flex; */
   background-color: var(--background-darker-than-white);
-  /* justify-content: center;
-  align-items: center; */
   background-size: 70px 65px;
   background-repeat: no-repeat;
   background-position: center;
@@ -306,43 +313,53 @@ img {
   background-image: url(../images/astronaut.svg);
 }
 
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: center;
+  }
+  .section__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-section {
+    padding: 94px 0;
+  }
+  .section__item {
+    flex-basis: calc((100% - 90px) / 4);
+    width: 270px;
+  }
+  .section__list {
+    list-style: none;
+  }
+}
 /*------------------------------ Секція 1 ---------------------------*/
 /* Герой - заголовок */
 .section-hero {
+  height: 400px;
   padding: 118px 0;
   text-align: center;
-  height: 400px;
+  background-color: var(--background-very-gray);
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid palevioletred; */
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile1x.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-mobile2x.jpg");
-  }
-}
-.section-hero .container {
-  max-width: 360px;
 }
 
 .section-hero__title {
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
   /* margin-top: 106px; */
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61;
+  line-height: 1.62;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 }
 
 /* Кнопка на сторiнцi Студiя*/
 .section-hero__btn {
-  margin: auto;
   padding: 10px 32px;
   /* було в 4 дз */
   /* display: inline-block; */
@@ -357,7 +374,7 @@ img {
   font-family: Roboto;
   cursor: pointer;
   border-radius: 4px;
-  border: 0;
+  border: none;
   transition-property: color, background-color;
 }
 .section-hero__btn:hover, .section-hero__btn:focus {
@@ -365,20 +382,63 @@ img {
   background-color: var(--accent-hover-color);
 }
 
-.page-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.overlay {
+  width: 100%;
+  max-width: 1600px;
+  height: 400px;
+  /* outline: 1px solid palevioletred; */
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.page {
-  padding-top: 0;
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile-2x.jpg);
+  }
 }
-
+@media screen and (min-width: 480px) {
+  .section-hero__title {
+    width: 360px;
+    font-size: 26px;
+  }
+}
 /* Фон для секції 1  */
-.bg {
-  background-color: var(--background-very-gray);
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tablet-1x.jpg);
+  }
 }
-
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tablet-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    padding: 200px 0;
+  }
+  .overlay {
+    height: 600px;
+  }
+  .container {
+    width: 696px;
+  }
+  .section-hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop-1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop-2x.jpg);
+  }
+}
 /* Секція 3 */
 .section__title {
   margin-bottom: 50px;
@@ -429,7 +489,22 @@ img {
   margin: 15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .page {
+    display: flex;
+  }
+}
 /*--------------------- Секція 4 -----------------------*/
+.section__title {
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
 .section-works__pictures {
   margin: -15px;
 }
@@ -451,6 +526,7 @@ img {
 }
 
 .section-works__image {
+  flex-basis: 100%;
   margin: 15px;
   list-style: none;
   background-color: var(--primary-white-color);
@@ -500,6 +576,26 @@ img {
   background: var(--background-darker-than-white);
 }
 
+@media screen and (min-width: 768px) {
+  .section-works__image {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-works {
+    padding: 94px 0;
+  }
+  .section-works__image {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .section__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
 /*----------------- Сукція 5 ------------------*/
 .page-coworker {
   padding-top: 94px;

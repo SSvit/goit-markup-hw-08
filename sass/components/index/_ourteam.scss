@@ -1,4 +1,12 @@
      /*--------------------- Секція 4 -----------------------*/
+      .section__title {
+         margin-bottom: 50px;
+
+         color: var(--primary-text-color);
+@include font(28px, 1.17, 700, 0.03em);
+         text-align: center;
+     }
+
      .section-works__pictures {
          margin: -15px;
         .title {
@@ -16,6 +24,7 @@
      }
 
      .section-works__image {
+        flex-basis: 100%;
          margin: 15px;
          list-style: none;
          background-color: var(--primary-white-color);
@@ -65,3 +74,26 @@
      .section-works {
          background: var(--background-darker-than-white);
      }
+
+
+     
+@media screen and (min-width: 768px) {
+  .section-works__image {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-works {
+    padding: 94px 0;
+  }
+  .section-works__image {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  .section__title {
+    margin-bottom: 50px;
+    @include font(36px, 1.17, 700, 0.03em);
+    // font-size: 36px;
+    // line-height: 1.67;
+  }
+}

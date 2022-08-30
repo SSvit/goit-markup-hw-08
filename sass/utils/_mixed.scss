@@ -7,11 +7,15 @@
 
 // @include font(16px, 1.2, 500, 0.03em)
 
-@mixin retina {
+// @mixin retina {
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        @content;
-    }
-}
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         @content;
+//     }
+// }
+
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
