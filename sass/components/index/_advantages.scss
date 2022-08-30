@@ -1,0 +1,50 @@
+/*------------------------ Секція 2 --------------------*/
+.section__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    .text {
+        color: var(--title-text-color);
+@include font(14px, 1.7, null, 0.03em)     
+    }
+    .title {
+        /* margin-top: 30px; */
+        margin-bottom: 10px;
+        color: var(--primary-text-color);
+@include font(14px, 1.14, 700, 0.03em);
+        text-transform: uppercase;
+    }
+}
+.section__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    &::before {
+        display: block;
+        content: "";
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        /* display: flex; */
+        background-color: var(--background-darker-than-white);
+        /* justify-content: center;
+    align-items: center; */
+        background-size: 70px 65px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}

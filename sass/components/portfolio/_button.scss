@@ -1,0 +1,37 @@
+.section-portfolio__button {
+    justify-content: center;
+    margin-bottom: 50px;
+    .section-portfolio__btn-primary,
+        .section-portfolio__btn {
+            padding: 6px 22px;
+    
+            color: var(--primary-white-color);
+            background-color: var(--accent-color);
+    @include font(16px, 1.62, 500, 0.03em);
+            font-style: normal;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 0;
+            /* transition-property: color; */
+            transition-property: color, background-color, box-shadow;
+        }
+}
+.section-portfolio__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.section-portfolio__button .section-portfolio__btn {
+    color: var(--primary-text-color);
+    background-color: var(--background-darker-than-white);
+}
+
+/* Кнопки: ховер та фокус на сторiнцi Портфолiо*/
+.section-portfolio__button .section-portfolio__btn:hover,
+.section-portfolio__button .section-portfolio__btn:focus,
+.section-portfolio__button .section-portfolio__btn-primary:hover,
+.section-portfolio__button .section-portfolio__btn-primary:focus {
+    background-color: var(--accent-hover-color);
+    color: var(--primary-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}

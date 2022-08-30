@@ -1,0 +1,22 @@
+@import "./utils/vars";
+@import "./base/common";
+@import "./utils/mixed";
+
+@import "./base/reset";
+@import "./components/container";
+@import "./utils/visually";
+
+@import "./components/header";
+@import "./components/index/advantages";
+@import "./components/index/hero";
+
+@import "./components/index/projects";
+@import "./components/index/ourteam";
+@import "./components/index/clients";
+@import "./components/index/backdrop";
+@import "./components/index/modal";
+
+@import "./components/footer";
+
+@import "./components/portfolio/button";
+@import "./components/portfolio/works";

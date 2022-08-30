@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+    font-family: Roboto, serif;      
+}
+
+
+/* Прибирає крапки */
+.list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    list-style: none;
+    text-decoration: none;
+}

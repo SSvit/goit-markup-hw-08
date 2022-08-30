@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Шапка-->
+    <header class="header">
+      <div class="container container-flex">
+        <nav class="navigation">
+          <a lang="en" href="./index.html" class="logo"
+            >Web<span class="logo__black">Studio</span></a
+          >
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="link current list-current">Портфоліо</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="connect list">
+          <li class="connect__item search">
+            <a href="mailto:info@devstudio.com" class="link link-search search">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/symbol-header.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="connect__item">
+            <a href="tel:+380961111111" class="link link-search">
+              <svg class="tiny" width="10" height="16">
+                <use href="./images/symbol-header.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--Унікальний контент-->
+    <main>
+      <section class="section-portfolio page-section">
+        <div class="container">
+          <h1 class="hero-titel visually-hidden">Наші роботи</h1>
+          <ul class="section-portfolio__button list">
+            <li class="section-portfolio__item items">
+              <button type="button" class="section-portfolio__btn-primary link">Все</button>
+            </li>
+            <li class="section-portfolio__item">
+              <button type="button" class="section-portfolio__btn link">Веб-сайти</button>
+            </li>
+            <li class="section-portfolio__item">
+              <button type="button" class="section-portfolio__btn link">Додатки</button>
+            </li>
+            <li class="section-portfolio__item">
+              <button type="button" class="section-portfolio__btn link">Дизайн</button>
+            </li>
+            <li class="section-portfolio__item">
+              <button type="button" class="section-portfolio__btn link">Маркетинг</button>
+            </li>
+          </ul>
+          <!--Другий список з зображеннями-->
+          <ul class="section-portfolio__works list">
+            <li class="section-portfolio__image section-product li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <!-- <div class="product-box"> -->
+                  <img
+                    class="img"
+                    src="./images/homework-img-1.jpg"
+                    alt="Робота наших працівників"
+                  />
+                  <div class="product-box">
+                    <p class="product-box__text link">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <!-- </div> -->
+                </div>
+                <div class="portfolio-team">
+                  <h3 class="navigation__item">Технокряк</h3>
+                  <p class="portfolio-team__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__image li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-2.jpg" alt="Постер Новий Орлеан" />
+                  <div class="product-box">
+                    <p class="product-box__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team">
+                  <h3 class="navigation__item">
+                    Постер <span lang="en"> New Orlean vs Golden Star</span>
+                  </h3>
+                  <p class="portfolio-team__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__image li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-3.jpg" alt="Ресторан" />
+                  <div class="product-box">
+                    <p class="product-box__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team">
+                  <h3 class="navigation__item">Ресторан <span lang="en">Seafood</span></h3>
+                  <p class="portfolio-team__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__image li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-4.jpg" alt="Основний проект" />
+                  <div class="product-box">
+                    <p class="product-box__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team">
+                  <h3 class="navigation__item">Проект <span lang="en">Prime</span></h3>
+                  <p class="portfolio-team__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__image li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-5.jpg" alt="Коробки" />
+                  <div class="product-box">
+                    <p class="product-box__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team">
+                  <h3 class="navigation__item">Проект <span lang="en">Boxes</span></h3>
+                  <p class="portfolio-team__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__image li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-6.jpg" alt="Натхнення без кордонів" />
+                  <div class="product-box">
+                    <p class="product-box__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team">
+                  <h3 lang="en" class="navigation__item">Inspiration has no Borders</h3>
+                  <p class="portfolio-team__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__image li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-7.jpg" alt="Видання" />
+                  <div class="product-box">
+                    <p class="product-box__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team">
+                  <h3 class="navigation__item">
+                    Видавництво <span lang="en">Limited Edition</span>
+                  </h3>
+                  <p class="portfolio-team__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__image li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-8.jpg" alt="Значок проекту" />
+                  <div class="product-box">
+                    <p class="product-box__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team">
+                  <h3 class="navigation__item">Проект <span lang="en">LAB</span></h3>
+                  <p class="portfolio-team__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__image li-thumb">
+              <a href="" class="section-portfolio__link-hover section-portfolio__link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-9.jpg" alt="Зростаючий бізнес" />
+                  <div class="product-box">
+                    <p class="product-box__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team">
+                  <h3 lang="en" class="navigation__item">Growing Business</h3>
+                  <p class="portfolio-team__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Футер-->
+    <footer class="footer footer-icon">
+      <div class="container container-icon">
+        <div class="footer-flex">
+          <a lang="en" href="./index.html" class="footer-logo"
+            >Web<span class="footer-logo__logo-white">Studio</span></a
+          >
+          <address class="footer-address">
+            <ul class="footer-address__nav list-item">
+              <li class="footer-address__title link">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="footer-address__title">
+                <a href="mailto:info@example.com" class="footer-address__link link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-address__title">
+                <a href="tel:+380991111111" class="footer-address__link link">+3809911111111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-flex">
+          <p class="footer-soc">приєднуйтесь</p>
+          <ul class="footer-flex__list">
+            <li class="footer-flex__item link">
+              <a href="" class="footer-flex__hover link">
+                <svg class="footer-flex__soc" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-flex__item link">
+              <a href="" class="footer-flex__hover link">
+                <svg class="footer-flex__soc" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-flex__item link">
+              <a href="" class="footer-flex__hover link">
+                <svg class="footer-flex__soc" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-flex__item link">
+              <a href="" class="footer-flex__hover link">
+                <svg class="footer-flex__soc" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- РОЗСИЛКА -->
+        <div class="footer-online">
+          <p class="footer-soc">Підпишіться на розсилку</p>
+          <form class="footer-online__form">
+            <input
+              type="email"
+              class="footer-online__input link"
+              name="newsletter"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-online__btn link">Підписатися</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
