@@ -13,7 +13,7 @@
         }
 
 .section-coworker__pic {
-    display: flex;
+    // display: flex;
     justify-content: space-between;
 }
 
@@ -23,9 +23,9 @@
     /* padding: 16px 32px; */
     margin-left: 30px;
 
-    &:first-child {
-        margin-left: 0;
-    }
+    // &:first-child {
+    //     margin-left: 0;
+    // }
 }
 
 .section-coworker__link {
@@ -51,9 +51,9 @@
 
 // }
 
-@media screen and (min-width: $mobile-width) {
+@media screen and (min-width: 480px) {
 .section-coworker__icon {      
-        flex-basis: calc ((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     }
 }
 

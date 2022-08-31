@@ -1,6 +1,9 @@
 .section-portfolio__button {
-    justify-content: center;
-    margin-bottom: 50px;
+    display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 15px 8px;
     .section-portfolio__btn-primary,
         .section-portfolio__btn {
             padding: 6px 22px;

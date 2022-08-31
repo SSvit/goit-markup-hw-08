@@ -37,7 +37,6 @@ body {
 /* Прибирає крапки */
 .list {
   list-style: none;
-  display: flex;
   padding: 0;
   margin: 0;
 }
@@ -261,7 +260,6 @@ img {
 
 /*------------------------ Секція 2 --------------------*/
 .section__list {
-  display: flex;
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
@@ -287,7 +285,6 @@ img {
 .section__item::before {
   display: block;
   content: "";
-  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   /* display: flex; */
@@ -451,7 +448,6 @@ img {
 }
 
 .section__list2 {
-  display: flex;
   margin: -15px;
   /* gap: 30px; */
   position: relative;
@@ -613,7 +609,6 @@ img {
 }
 
 .section-coworker__pic {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -622,14 +617,6 @@ img {
   height: 92px;
   /* padding: 16px 32px; */
   margin-left: 30px;
-}
-.section-coworker__icon:first-child {
-  margin-left: 0;
-}
-
-.section-coworker__icon {
-  flex-basis: calc((100% - 30px) / 2);
-  height: 92px;
 }
 
 .section-coworker__link {
@@ -648,6 +635,11 @@ img {
   border-color: var(--accent-hover-color);
 }
 
+@media screen and (min-width: 480px) {
+  .section-coworker__icon {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 768px) {
   .section-coworker__icon {
     flex-basis: calc((100% - 60px) / 3);
@@ -1094,8 +1086,10 @@ img {
 }
 
 .section-portfolio__button {
-  justify-content: center;
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 15px 8px;
 }
 .section-portfolio__button .section-portfolio__btn-primary,
 .section-portfolio__button .section-portfolio__btn {
