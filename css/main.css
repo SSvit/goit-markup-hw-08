@@ -90,6 +90,7 @@ img {
 }
 
 .page-section {
+  background-color: var(--primary-white-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -110,6 +111,7 @@ img {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* ХЕДЕР Логотип */
@@ -260,9 +262,9 @@ img {
 
 /*------------------------ Секція 2 --------------------*/
 .section__list {
+  display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
 }
 .section__list .text {
   color: var(--title-text-color);
@@ -289,7 +291,7 @@ img {
   margin-bottom: 30px;
   /* display: flex; */
   background-color: var(--background-darker-than-white);
-  background-size: 70px 65px;
+  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -339,6 +341,7 @@ img {
   background-color: var(--background-very-gray);
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: 0.06em;
   background-size: cover;
   background-position: center;
 }
@@ -492,7 +495,7 @@ img {
 }
 /*--------------------- Секція 4 -----------------------*/
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 28px;
@@ -502,11 +505,12 @@ img {
 }
 
 .section-works__pictures {
-  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .section-works__pictures .title {
   margin-bottom: 10px;
-  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -523,7 +527,6 @@ img {
 
 .section-works__image {
   flex-basis: 100%;
-  margin: 15px;
   list-style: none;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -599,7 +602,7 @@ img {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 28px;
@@ -609,22 +612,23 @@ img {
 }
 
 .section-coworker__pic {
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .section-coworker__icon {
-  width: 170px;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
   /* padding: 16px 32px; */
-  margin-left: 30px;
 }
 
 .section-coworker__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
@@ -635,11 +639,6 @@ img {
   border-color: var(--accent-hover-color);
 }
 
-@media screen and (min-width: 480px) {
-  .section-coworker__icon {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
 @media screen and (min-width: 768px) {
   .section-coworker__icon {
     flex-basis: calc((100% - 60px) / 3);
@@ -889,8 +888,13 @@ img {
 }
 
 .footer {
+  text-align: center;
+  padding: 60px 0;
   background-color: var(--background-very-gray);
-  margin: 0 auto;
+  color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-logo {
@@ -916,21 +920,12 @@ img {
   color: var(--accent-hover-color);
 }
 
-.footer-icon {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .footer-address__title {
   transition-property: color;
 }
 
-.container-icon {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-address {
+  display: block;
   margin-top: 20px;
   font-style: normal;
 }
@@ -950,7 +945,6 @@ img {
 
 .footer-address__link {
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
   transition-property: color;
 }
 .footer-address__link:hover, .footer-address__link:focus {
@@ -968,9 +962,11 @@ img {
 
 /*----- Футер Приєднуйтесь -----*/
 .footer-flex {
-  justify-content: center;
-  align-items: baseline;
-  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.footer-wrapper {
+  margin-bottom: 60px;
 }
 
 .footer-flex:last-child {
@@ -978,9 +974,8 @@ img {
 }
 
 .footer-soc {
+  display: block;
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -990,11 +985,8 @@ img {
 }
 
 .footer-flex__list {
-  margin: 0;
-  padding-left: 0;
   display: flex;
   justify-content: center;
-  align-items: baseline;
   gap: 10px;
 }
 

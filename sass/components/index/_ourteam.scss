@@ -1,6 +1,6 @@
      /*--------------------- Секція 4 -----------------------*/
       .section__title {
-         margin-bottom: 50px;
+         margin-bottom: 30px;
 
          color: var(--primary-text-color);
 @include font(28px, 1.17, 700, 0.03em);
@@ -8,10 +8,13 @@
      }
 
      .section-works__pictures {
-         margin: -15px;
+      display: flex;
+      flex-wrap: wrap;
+        //  margin: -15px;
+        gap: 30px;
         .title {
                 margin-bottom: 10px;
-                color: var(--primary-text-color);
+                // color: var(--primary-text-color);
         @include font(16px, 1.18, 500, 0.03em);
                 text-align: center;
             }
@@ -25,7 +28,7 @@
 
      .section-works__image {
         flex-basis: 100%;
-         margin: 15px;
+        //  margin: 15px;
          list-style: none;
          background-color: var(--primary-white-color);
          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

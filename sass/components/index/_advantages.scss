@@ -1,10 +1,10 @@
 /*------------------------ Секція 2 --------------------*/
 .section__list {
     // list-style: none;
-    // display: flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    align-items: center;
+    // align-items: center;
     .text {
         color: var(--title-text-color);
 @include font(14px, 1.7, null, 0.03em)     
@@ -30,7 +30,7 @@
         background-color: var(--background-darker-than-white);
     //  justify-content: center;
     // align-items: center;
-        background-size: 70px 65px;
+        background-size: 70px 70px;
         background-repeat: no-repeat;
         background-position: center;
     }

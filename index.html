@@ -11,9 +11,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +25,7 @@
     <!--Шапка-->
     <header class="header">
       <div class="container container-flex">
-        <!-- <nav class="navigation">
+        <nav class="navigation">
           <a lang="en" href="./index.html" class="logo"
             >Web<span class="logo__black">Studio</span></a
           >
@@ -43,8 +40,8 @@
               <a href="" class="link">Контакты</a>
             </li>
           </ul>
-        </nav> -->
-        <!-- <ul class="connect list">
+        </nav>
+        <ul class="connect list">
           <li class="connect__item search">
             <a href="mailto:info@devstudio.com" class="link link-search">
               <svg class="header-icon" width="16" height="12">
@@ -61,7 +58,7 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul> -->
+        </ul>
       </div>
     </header>
     <!--Уникальный контент-->
@@ -174,22 +171,33 @@
                 <p class="text" lang="en">Product Designer</p>
                 <ul class="team-box__userpic">
                   <li class="team-box__userpic-item">
-                    <a href="" class="team-box__userpic-link link">
+                    <a
+                      href=""
+                      aria-label="Read more about Seminole's new baby mayor"
+                      class="team-box__userpic-link link"
+                    >
                       <svg class="team-box__userpic-icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-box__userpic-item">
-                    <a href="" class="team-box__userpic-link link"
+                    <a
+                      href=""
+                      aria-label="Read more about Seminole's new baby mayor"
+                      class="team-box__userpic-link link"
                       ><svg class="team-box__userpic-icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-box__userpic-item">
-                    <a href="" class="team-box__userpic-link link"
-                      ><svg class="team-box__userpic-icon" width="20" height="20">
+                    <a
+                      href=""
+                      aria-label="Read more about Seminole's new baby mayor"
+                      class="team-box__userpic-link link"
+                    >
+                      <svg class="team-box__userpic-icon" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
@@ -410,59 +418,62 @@
         </div>
       </section>
     </main>
-    <!--Футер-->
+    <!--Підвал-->
     <footer class="footer footer-icon">
       <div class="container container-icon">
         <div class="footer-flex">
-          <a lang="en" href="./index.html" class="footer-logo"
-            >Web<span class="footer-logo__logo-white">Studio</span></a
-          >
-          <address class="footer-address">
-            <ul class="footer-address__nav list-item">
-              <li class="footer-address__title link">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="footer-address__title">
-                <a href="mailto:info@example.com" class="footer-address__link link"
-                  >info@example.com</a
-                >
+          <div class="footer-wrapper" id="contacts-id">
+            <a lang="en" href="./index.html" class="footer-logo"
+              >Web<span class="footer-logo__logo-white">Studio</span></a
+            >
+            <address class="footer-address">
+              <ul class="footer-address__nav list-item">
+                <li class="footer-address__title link">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="footer-address__title">
+                  <a href="mailto:info@example.com" class="footer-address__link link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__title">
+                  <a href="tel:+380991111111" class="footer-address__link link">+3809911111111</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- Приєднуйтесь -->
+          <div class="footer-flex">
+            <p class="footer-soc">приєднуйтесь</p>
+            <ul class="footer-flex__list list">
+              <li class="footer-flex__item link">
+                <a href="" class="footer-flex__hover link">
+                  <svg class="footer-flex__soc" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-address__title">
-                <a href="tel:+380991111111" class="footer-address__link link">+3809911111111</a>
+              <li class="footer-flex__item link">
+                <a href="" class="footer-flex__hover link">
+                  <svg class="footer-flex__soc" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-flex__item link">
+                <a href="" class="footer-flex__hover link">
+                  <svg class="footer-flex__soc" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-flex__item link">
+                <a href="" class="footer-flex__hover link">
+                  <svg class="footer-flex__soc" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-flex">
-          <p class="footer-soc">приєднуйтесь</p>
-          <ul class="footer-flex__list">
-            <li class="footer-flex__item link">
-              <a href="" class="footer-flex__hover link">
-                <svg class="footer-flex__soc" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-flex__item link">
-              <a href="" class="footer-flex__hover link">
-                <svg class="footer-flex__soc" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-flex__item link">
-              <a href="" class="footer-flex__hover link">
-                <svg class="footer-flex__soc" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-flex__item link">
-              <a href="" class="footer-flex__hover link">
-                <svg class="footer-flex__soc" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!-- РОЗСИЛКА -->
         <div class="footer-online">
@@ -481,7 +492,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="submit" class="modal__btn link" data-modal-close>
+        <button class="modal__btn link" type="submit" data-modal-close>
           <svg class="modal__close" width="18" height="18">
             <use href="./images/modal-button.svg#icon-modal-button"></use>
           </svg>

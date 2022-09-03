@@ -1,6 +1,10 @@
      .footer {
-         background-color: var(--background-very-gray);
-         margin: 0 auto;
+        text-align: center;
+        padding: 60px 0;
+
+        background-color: var(--background-very-gray);
+        color: var(--primary-white-color);
+    @include font(14px, 1.71, null, 0.03em);
      }
 
  .footer-logo {
@@ -28,21 +32,22 @@
          color: var(--accent-hover-color);
      }
  }
-     .footer-icon {
-         padding-top: 60px;
-         padding-bottom: 60px;
-     }
+    //  .footer-icon {
+    //      padding-top: 60px;
+    //      padding-bottom: 60px;
+    //  }
 
      .footer-address__title {
          transition-property: color;
      }
-
-     .container-icon {
-         display: flex;
-         align-items: baseline;
-     }
+// на декстоп
+    //  .container-icon {
+    //      display: flex;
+    //      align-items: baseline;
+    //  }
 
      .footer-address {
+        display: block;
          margin-top: 20px;
          font-style: normal;
      }
@@ -59,7 +64,6 @@
     }
      .footer-address__link {
          color: rgba(255, 255, 255, 0.6);
-         text-decoration: none;
 
          transition-property: color;
         &:hover,
@@ -78,9 +82,15 @@
 
      /*----- Футер Приєднуйтесь -----*/
      .footer-flex {
-         justify-content: center;
-         align-items: baseline;
-         margin-right: auto;
+    // на декстоп
+        //  justify-content: center;
+        //  align-items: baseline;
+        //  margin-right: auto;
+        margin-bottom: 60px;
+     }
+
+     .footer-wrapper {
+        margin-bottom: 60px;
      }
 
      .footer-flex:last-child {
@@ -88,20 +98,18 @@
      }
 
      .footer-soc {
-         margin-bottom: 20px;
-         display: flex;
-         align-items: center;
+         display: block;
+         margin-bottom: 20px;         
+        //  align-items: center;
     @include font(14px, 1.14, 700, 0.03em);
          text-transform: uppercase;
          color: var(--primary-white-color);
      }
 
      .footer-flex__list {
-         margin: 0;
-         padding-left: 0;
          display: flex;
          justify-content: center;
-         align-items: baseline;
+            //  align-items: baseline;        
          gap: 10px;
      }
 
