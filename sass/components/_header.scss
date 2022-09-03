@@ -1,19 +1,25 @@
 /* ХЕДЕР Логотип */
-.header {
-    border-bottom: 2px;
-    border-color: #188CE8;
+.header {    
+    // border-color: #188CE8;
     border-bottom: 1px solid #ECECEC;
+}
+
+.header .container {
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .navigation {
     display: flex;
-    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    // margin-right: auto;
 }
 
 .logo {
     display: inline-block;
     margin-right: 93px;
-    padding: 24px 0;
+    padding: 16px 0;
 
     color: var(--accent-color);
     
@@ -37,7 +43,7 @@
     }
 }
 .navigation__list {
-    display: flex;
+    // display: flex;
     /* margin-left: 50px; */
     /* gap: 30px; */
     .link {
@@ -56,12 +62,6 @@
     margin-left: 50px;
 }
 
-.link {    
-    // display: flex;
-    text-decoration: none;
-    transition-duration: 1250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 /* Добавляє ховер i фокус в хедерi */
 .navigation__list .link:hover,
 .navigation__list .link:focus,

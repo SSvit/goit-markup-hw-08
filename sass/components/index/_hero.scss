@@ -84,7 +84,7 @@
     //      background-color: var(--background-very-gray);
     //   }
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: 768px) {
   .overlay {
        background-image: linear-gradient(
           to right,
@@ -116,9 +116,10 @@
   .overlay {
     height: 600px;
   }
-   .container {
-           width: 696px;
-       }
+                      //  поки не знаю потрібно чи ні
+  //  .container {
+  //          width: 696px;
+  //      }
 
   .section-hero__title {
     width: 696px;
@@ -135,7 +136,7 @@
     url(../images/hero-bg-desktop-1x.jpg);
   }
 
-  @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {

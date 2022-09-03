@@ -103,7 +103,7 @@
         //  align-items: center;
     @include font(14px, 1.14, 700, 0.03em);
          text-transform: uppercase;
-         color: var(--primary-white-color);
+        //  color: var(--primary-white-color);
      }
 
      .footer-flex__list {
@@ -142,19 +142,20 @@
                 background-color: var(--accent-hover-color);
             }
      }
-     .footer-online__form {
-         display: flex;
-         justify-content: center;
-         /* align-items: baseline; */
-     }
+    //  .footer-online__form {
+    //      display: flex;
+    //      justify-content: center;
+    //      /* align-items: baseline; */
+    //  }
 
      .footer-online__input {
-         width: 358px;
+         width: 100%;
          height: 50px;
+// чому не виходить прибрати лефт і топ? Чому без них не працює бордер?
          left: 815px;
          top: 2784px;
-         padding-left: 16px;
-         margin-right: 12px;
+         padding: 15px 16px;
+         margin-bottom: 20px;
          letter-spacing: 0.03em;
 
          color: rgba(255, 255, 255, 0.6);
@@ -172,15 +173,16 @@
             }
      }
     .footer-online__btn {
-         display: flex;
-         width: 200px;
-         height: 50px;
- @include font(16px, 1.87, 700, 0.03em);
-         color: #FFFFFF;
-         background: #2196F3;
-
+         display: flex; 
          justify-content: center;
          align-items: center;
+         width: 200px;
+         height: 50px;
+         margin: 0 auto;
+ @include font(16px, 1.67, 700, null);
+         color: #FFFFFF;
+         background: #2196F3;
+        
          letter-spacing: 0.06em;
          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
          border-radius: 4px;

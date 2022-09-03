@@ -66,10 +66,9 @@
     padding: 94px 0;
   }
   .section__item {
-    flex-basis: calc((100% - 3 * 30px) / 4);
-    width: 270px;
+    width: calc((100% - 3 * 30px) / 4);    
   }
-  .section__list {
-      list-style: none;
-  }
+//   .section__list {
+//       list-style: none;
+//   }
 }

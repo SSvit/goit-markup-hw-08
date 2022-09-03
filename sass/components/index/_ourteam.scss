@@ -95,8 +95,6 @@
   }
   .section__title {
     margin-bottom: 50px;
-    @include font(36px, 1.17, 700, 0.03em);
-    // font-size: 36px;
-    // line-height: 1.67;
+    @include font(36px, 1.67, 700, 0.03em);    
   }
 }

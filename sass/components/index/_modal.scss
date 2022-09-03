@@ -1,25 +1,29 @@
-.modal {
-    padding: 40px;
-    position: absolute;
+.modal {    
+    // position: absolute;
+    position: fixed;    
     width: 528px;
     height: 581px;
     /* left: 536px;
     top: 221px; */
     top: 50%;
     left: 50%;
+    padding: 40px;
+
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);  
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__btn {
+    position: absolute;
     display: flex;
     /* justify-content: center;  */
-    align-items: center;
-    position: absolute;
+    align-items: center;    
     right: 8px;
     top: 8px;
     width: 30px;
@@ -42,18 +46,25 @@
     pointer-events: none;
 }
 /*---- Форма ----*/
+            //   поки не знаю чи це потрібно
+// .form {
+//     display: flex;
+//     flex-direction: column;
+//     color: var(--color-white);
+//     margin-top: 12px;
+
 .modal-form__field {
     margin-bottom: 10px;
 }
 
 .modal-title {
     margin-bottom: 12px;
-
-    color: #212121;
-@include font(20px, 1.15, 700, 0.03em);
-    font-family: 'Roboto';
     font-style: normal;
     text-align: center;
+    justify-content: center;
+    color: #212121;
+@include font(20px, 1.15, 700, 0.03em);
+    
     letter-spacing: 0.03em;
 }
 
