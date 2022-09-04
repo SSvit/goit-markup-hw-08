@@ -1,10 +1,9 @@
 /*------------------------ Секція 2 --------------------*/
-.section__list {
-    // list-style: none;
+.section__list {    
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    // align-items: center;
+    
     .text {
         color: var(--title-text-color);
 @include font(14px, 1.7, null, 0.03em)     
@@ -17,13 +16,26 @@
 @include font(14px, 1.14, 700, 0.03em);
         text-transform: uppercase;
     }
+    
+        @media screen and (min-width: 1200px) { 
+            width: 1200px;  
+             list-style: none;
+             align-items: center;
+      }
 }
+
+ @media screen and (min-width: 1200px) {
+    .section__list .title {
+     text-align: left;
+    }   
+ }
+
+
 .section__item {
-    // flex-basis: calc((100% - 3 * 30px) / 4);
     &::before {
         display: block;
         content: "";
-        // width: 400px;
+        width: 450px;
         height: 120px;
         margin-bottom: 30px;
         /* display: flex; */
@@ -34,7 +46,18 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+            // flex-basis: calc((100% - 3 * 30px) / 4);     
+        &::before {
+                width: 270px;
+            }
+    }
+                
 }
+
+
 .icon-antenna::before {
     background-image: url(../images/antenna.svg);
 }
@@ -52,23 +75,12 @@
 }
 
 
-@media screen and (min-width: 768px) {
-.title {
-    text-align: center;
-  }
-  .section__item {
-    width: calc((100% - 30px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-section {
-    padding: 94px 0;
-  }
-  .section__item {
-    width: calc((100% - 3 * 30px) / 4);    
-  }
-//   .section__list {
-//       list-style: none;
+// @media screen and (min-width: 768px) {
+// .title {
+//     text-align: center;
 //   }
-}
+//   .section__item {
+//     width: calc((100% - 30px) / 2);
+//   }
+// }
+

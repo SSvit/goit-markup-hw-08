@@ -13,19 +13,29 @@
         // .container {
         //         width: 696px;
         //     }
+            @media screen and (min-width: 1200px) {
+                    padding: 200px 0;
+                  }
      }
+
      .section-hero__title {
+      width: 360px;
          margin: 0 auto 30px auto;
         /* margin-top: 106px; */     
          color: var(--primary-white-color);
 @include font(26px, 1.62, 900, 0.06em);
          text-align: center;
          text-transform: uppercase;
+
+        @media screen and (min-width: 1200px) {
+          width: 696px;
+            @include font(44px, 1.36, 900, 0.06em);                              
+              }
      }
+
 /* Кнопка на сторiнцi Студiя*/
      .section-hero__btn {
-         padding: 10px 32px;
-        //  display: inline-flex;
+         padding: 10px 32px;       
                 /* було в 4 дз */
                 /* display: inline-block; */
          align-items: center;
@@ -45,6 +55,10 @@
                 color: var(--primary-white-color);
                 background-color: var(--accent-hover-color);
             }
+
+                  @media screen and (min-width: 1200px) {
+                         display: inline-flex;
+                      }
      }
 
      .overlay {
@@ -58,6 +72,16 @@
              background-repeat: no-repeat;
              background-size: cover;
              background-position: center;
+
+            @media screen and (min-width: $desktop-width) {
+                    height: 600px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                          //  поки не знаю потрібно чи ні
+                //  .container {
+                //          width: 696px;
+                //      }                         
      }
 
 @media (min-device-pixel-ratio: 2),
@@ -69,13 +93,6 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/hero-bg-mobile-2x.jpg);
-    }
-}
-
-@media screen and (min-width: $mobile-width) {
-    .section-hero__title {
-        width: 360px;
-        font-size: 26px;
     }
 }
         
@@ -108,25 +125,6 @@
   }
 }
 
-@media screen and (min-width: $desktop-width) {
-.section-hero {
-    padding: 200px 0;
-  }
-
-  .overlay {
-    height: 600px;
-  }
-                      //  поки не знаю потрібно чи ні
-  //  .container {
-  //          width: 696px;
-  //      }
-
-  .section-hero__title {
-    width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
-  }
-
   .overlay {
     background-image: linear-gradient(
       to right,
@@ -149,4 +147,3 @@
       url(../images/hero-bg-desktop-2x.jpg);
     }
   }
-}

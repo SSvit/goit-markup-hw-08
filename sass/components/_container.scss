@@ -22,8 +22,15 @@
 
 @media screen and (min-width: 1200px) {
     .container {
-            max-width: 1200px;
+            width: 1200px;
         }
+                .section-hero .container {
+                    width: 696px;
+                }
+//          .page-section .container {
+//             width: 1200%;
+//          }
+// }
 }
 
 // .container-flex {
@@ -35,12 +42,20 @@
     background-color: var(--primary-white-color);
      padding-top: 60px;
      padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {           
+                padding: 94px 0;       
+            }            
  }
 
  .page {
     display: none;
-     padding-top: 0;
+    padding-top: 0;
+    padding-bottom: 94px;
+    @media screen and (min-width: 1200px) {
+           display: flex;
  }
+}
 
 //  @media screen and (min-width: 480px) {
 //     .page {
