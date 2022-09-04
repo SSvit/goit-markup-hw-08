@@ -48,19 +48,29 @@
     /* gap: 30px; */
     .link {
             display: block;
-            padding-top: 32px;
-            padding-bottom: 32px;
+            // padding-top: 32px;
+            // padding-bottom: 32px;
     
             color: var(--primary-text-color);
-    @include font(14px, 1.14, 500, 0.02em);
+    // @include font(14px, 1.14, 500, 0.02em);
+    @include font(40px, 1.17, 500, 0.02em);
             text-decoration: none;
     
             transition-property: color;
         }
 }
-.navigation__list .navigation__item + .navigation__item {
-    margin-left: 50px;
+
+.link-padding {
+    padding-top: 35.71px;
+    padding-bottom: 35.71px;
 }
+
+.link-pad-bot {
+        padding-bottom: 302px;
+}
+// .navigation__list .navigation__item + .navigation__item {
+//     margin-left: 50px;
+// }
 
 /* Добавляє ховер i фокус в хедерi */
 .navigation__list .link:hover,
@@ -74,33 +84,35 @@
     color: var(--accent-color);
 }
 
-.list-current {
-    position: relative;
-    &::after {
-            position: absolute;
-            content: "";
-            display: flex;
-            width: 100%;
-            bottom: -6px;
-            height: 4px;
-            background: #2196F3;
-            border-radius: 2px;
-        }
-}
+// .list-current {
+//     position: relative;
+//     &::after {
+//             position: absolute;
+//             content: "";
+//             display: flex;
+//             width: 100%;
+//             bottom: -6px;
+//             height: 4px;
+//             background: #2196F3;
+//             border-radius: 2px;
+//         }
+// }
 .connect__item {
     display: flex;
 }
 
 .connect {
-    display: flex;
+    // display: flex;
     justify-content: center;  
     align-items: center;    
     /* gap: 50px; */
         /* flex-direction: ; */
-@include font(14px, 1.14, 500, 0.02em);
+// @include font(14px, 1.14, 500, 0.02em);
+@include font(34px, 1.17, 500, 0.02em);
+
     .link {
-            padding-top: 32px;
-            padding-bottom: 32px;
+            padding-top: 16px;
+            padding-bottom: 16px;
     
             transition-property: color;
         }
