@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 480px) {
     .container {
-        width: 480px;
+        max-width: 480px;
     }
 }
 
@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 1200px) {
     .container {
-            width: 1200px;
+            max-width: 1200px;
         }
                 .section-hero .container {
                     width: 696px;
