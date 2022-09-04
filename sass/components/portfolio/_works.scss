@@ -19,12 +19,18 @@
 
 @media screen and (min-width: 1200px) {
     .section-portfolio__works {
-        gap: 0;
+        max-width: 1600px;
     }
+
+
+// @media screen and (min-width: 1200px) {
+//     .section-portfolio__works {
+//         gap: 0;
+//     }
 //   .projects__item {
 //     width: calc((100% - 60px) / 3);
 //   }
-}
+// }
 
 // .section-portfolio__works {
 // @media screen and (min-width: 768px) {
@@ -67,8 +73,6 @@
 
     @media screen and (min-width: 1200px) {
         width: calc((100% - 60px) / 3);
-        margin-right: 30px;
-        margin-top: 30px;
     }
 }
 
