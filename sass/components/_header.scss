@@ -1,7 +1,11 @@
 /* ХЕДЕР Логотип */
 .header {    
-    // border-color: #188CE8;
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width: 1220px) {
+        border-bottom: 2px;
+          border-color: #188CE8;          
+    }
 }
 
 .header .container {
@@ -13,7 +17,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    }
 }
 
 .logo {
@@ -32,7 +39,11 @@
     &:focus {
         color: var(--accent-hover-color);
     }
+        @media screen and (min-width: 1200px) {
+            padding: 24px 0;
+        }
 }
+
 .logo__black {
     color: var(--accent-black-color);
 
@@ -42,14 +53,11 @@
         color: var(--accent-hover-color);
     }
 }
-.navigation__list {
-    // display: flex;
+.navigation__list {    
     /* margin-left: 50px; */
     /* gap: 30px; */
     .link {
             display: block;
-            // padding-top: 32px;
-            // padding-bottom: 32px;
     
             color: var(--primary-text-color);
     // @include font(14px, 1.14, 500, 0.02em);
@@ -57,7 +65,16 @@
             text-decoration: none;
     
             transition-property: color;
+
+            @media screen and (min-width: 1200px) {
+                    padding-top: 32px;
+                        padding-bottom: 32px;
+                }
         }
+
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                }
 }
 
 .link-padding {
@@ -68,9 +85,13 @@
 .link-pad-bot {
         padding-bottom: 302px;
 }
-// .navigation__list .navigation__item + .navigation__item {
-//     margin-left: 50px;
-// }
+
+@media screen and (min-width: 1200px) {
+    .navigation__list .navigation__item + .navigation__item {
+    margin-left: 50px;
+}
+}
+
 
 /* Добавляє ховер i фокус в хедерi */
 .navigation__list .link:hover,
@@ -84,30 +105,31 @@
     color: var(--accent-color);
 }
 
-// .list-current {
-//     position: relative;
-//     &::after {
-//             position: absolute;
-//             content: "";
-//             display: flex;
-//             width: 100%;
-//             bottom: -6px;
-//             height: 4px;
-//             background: #2196F3;
-//             border-radius: 2px;
-//         }
-// }
+@media screen and (min-width: 1200px) {
+    .list-current {
+    position: relative;
+    &::after {
+            position: absolute;
+            content: "";
+            display: flex;
+            width: 100%;
+            bottom: -6px;
+            height: 4px;
+            background: #2196F3;
+            border-radius: 2px;
+        }
+}
+}
+
 .connect__item {
     display: flex;
 }
 
 .connect {
-    // display: flex;
     justify-content: center;  
     align-items: center;    
     /* gap: 50px; */
         /* flex-direction: ; */
-// @include font(14px, 1.14, 500, 0.02em);
 @include font(34px, 1.17, 500, 0.02em);
 
     .link {
@@ -115,8 +137,19 @@
             padding-bottom: 16px;
     
             transition-property: color;
+
+            @media screen and (min-width: 1200px) {
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                }
         }
+
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    @include font(14px, 1.14, 500, 0.02em);
+                }
 }
+
 .link-search {
      color: var(--title-text-color);
 }
