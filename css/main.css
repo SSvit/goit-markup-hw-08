@@ -346,6 +346,11 @@ img {
   transition: transform;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header-menu .is-hidden {
+    display: none;
+  }
+}
 .header-menu {
   display: flex;
   flex-direction: column;
@@ -510,7 +515,7 @@ img {
 
 /* Кнопка на сторiнцi Студiя*/
 .section-hero__btn {
-  padding: 10px 32px;
+  padding: 10px 24px;
   /* було в 4 дз */
   /* display: inline-block; */
   align-items: center;
@@ -534,6 +539,7 @@ img {
 @media screen and (min-width: 1200px) {
   .section-hero__btn {
     display: inline-flex;
+    padding: 10px 32px;
   }
 }
 
@@ -1157,6 +1163,12 @@ img {
 .footer-flex {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-flex {
     display: flex;
@@ -1169,6 +1181,11 @@ img {
 
 .footer-wrapper {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    margin: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-wrapper {
@@ -1270,6 +1287,11 @@ img {
 }
 .footer-online__input:hover, .footer-online__input:focus {
   border-color: var(--accent-hover-color);
+}
+@media screen and (min-width: 768px) {
+  .footer-online__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

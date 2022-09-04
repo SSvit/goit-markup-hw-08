@@ -33,14 +33,14 @@
                         }
      }
 
-            @media screen and (min-width: 1200px) {
-.section-works .section-works__pictures {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: inherit;
-}
-}
+     @media screen and (min-width: 1200px) {
+             .section-works .section-works__pictures {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 flex-wrap: inherit;
+              }
+         }
 
      .section-works__image {
         flex-basis: 100%;

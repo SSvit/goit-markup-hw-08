@@ -35,7 +35,7 @@
 
 /* Кнопка на сторiнцi Студiя*/
      .section-hero__btn {
-         padding: 10px 32px;       
+         padding: 10px 24px;       
                 /* було в 4 дз */
                 /* display: inline-block; */
          align-items: center;
@@ -56,8 +56,13 @@
                 background-color: var(--accent-hover-color);
             }
 
+                                // @media screen and (min-width: 768px) {
+                                   
+                                // }
+
                   @media screen and (min-width: 1200px) {
                          display: inline-flex;
+                        padding: 10px 32px;
                       }
      }
 
