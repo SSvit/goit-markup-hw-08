@@ -2,15 +2,17 @@
 .header {    
     border-bottom: 1px solid #ECECEC;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
             border-bottom: 2px;
             border-color: #188CE8;
         }
 }
 
 .header .container {
+ @media screen and (max-width: 768px) {
     font-weight: 500;
-    letter-spacing: 0.02em;
+        letter-spacing: 0.02em;
+ }    
 }
 
 .navigation {
@@ -18,9 +20,14 @@
     justify-content: space-between;
     align-items: center;   
 
-    @media screen and (min-width: 1200px) {
-            margin-right: auto;
-        }
+    // @media screen and (min-width: 1200px) {
+    //         margin-right: auto;
+    //     }
+}
+
+.navigation-decst {
+    display: flex;
+    margin-right: auto;
 }
 
 .logo {
@@ -73,7 +80,7 @@
                 }
         }
 
-                @media screen and (min-width: 1200px) {
+                @media screen and (min-width: 768px) {
                     display: flex;
                 }
 }
@@ -114,7 +121,7 @@
     color: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .list-current {
     position: relative;
     &::after {

@@ -134,16 +134,18 @@ img {
 .header {
   border-bottom: 1px solid #ECECEC;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
     border-bottom: 2px;
     border-color: #188CE8;
   }
 }
 
-.header .container {
-  font-weight: 500;
-  letter-spacing: 0.02em;
+@media screen and (max-width: 768px) {
+  .header .container {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
 }
 
 .navigation {
@@ -151,10 +153,10 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (min-width: 1200px) {
-  .navigation {
-    margin-right: auto;
-  }
+
+.navigation-decst {
+  display: flex;
+  margin-right: auto;
 }
 
 .logo {
@@ -211,7 +213,7 @@ img {
     letter-spacing: 0.02em;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
   }
@@ -254,7 +256,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .list-current {
     position: relative;
   }
