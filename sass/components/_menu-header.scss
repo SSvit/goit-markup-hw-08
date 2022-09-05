@@ -7,10 +7,10 @@
     padding: 0;
     cursor: pointer;
     border: none;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
 
-.menu-header-open-btn__icon, 
+.menu-header-open-btn__icon,
 .menu-header-close-btn {
     fill: currentColor;
 
@@ -62,3 +62,24 @@
 .menu-header-close-btn:focus {
     color: var(--accent-hover-color);
 }
+
+
+@media screen and (min-width: 767px) {
+    .navigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+     .decstop-menu {
+        display: none;
+     }
+}
+
+@media screen and (min-width: 768px) {
+    .decstop-menu {
+        display: flex;
+    }
+}
+
+

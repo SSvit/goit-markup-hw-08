@@ -2,10 +2,10 @@
 .header {    
     border-bottom: 1px solid #ECECEC;
 
-    @media screen and (min-width: 1220px) {
-        border-bottom: 2px;
-          border-color: #188CE8;          
-    }
+    @media screen and (min-width: 1200px) {
+            border-bottom: 2px;
+            border-color: #188CE8;
+        }
 }
 
 .header .container {
@@ -16,11 +16,11 @@
 .navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
 
     @media screen and (min-width: 1200px) {
-    margin-right: auto;
-    }
+            margin-right: auto;
+        }
 }
 
 .logo {
@@ -67,8 +67,9 @@
             transition-property: color;
 
             @media screen and (min-width: 1200px) {
-                    padding-top: 32px;
+                        padding-top: 32px;
                         padding-bottom: 32px;
+                    @include font(14px, 1.14, 500, 0.02em);
                 }
         }
 
@@ -80,10 +81,18 @@
 .link-padding {
     padding-top: 35.71px;
     padding-bottom: 35.71px;
+
+    @media screen and (min-width: 1200px) {
+            padding: 0;
+        }
 }
 
 .link-pad-bot {
         padding-bottom: 302px;
+
+        @media screen and (min-width: 1200px) {
+                padding: 0;
+            }
 }
 
 @media screen and (min-width: 1200px) {
