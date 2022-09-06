@@ -40,6 +40,12 @@ body {
   padding: 0;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    gap: 50px;
+  }
+}
 
 .list-item {
   list-style: none;
@@ -175,6 +181,11 @@ img {
 .logo:hover, .logo:focus {
   color: var(--accent-hover-color);
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 87px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     padding: 24px 0;
@@ -193,6 +204,11 @@ img {
   /* margin-left: 50px; */
   /* gap: 30px; */
 }
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    margin-right: auto;
+  }
+}
 .navigation__list .link {
   display: block;
   color: var(--primary-text-color);
@@ -203,19 +219,21 @@ img {
   text-decoration: none;
   transition-property: color;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .navigation__list .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
-@media screen and (min-width: 768px) {
-  .navigation__list {
-    display: flex;
+@media screen and (min-width: 1200px) {
+  .navigation__list .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -285,10 +303,24 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 768px) {
+  .connect {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+}
 .connect .link {
   padding-top: 16px;
   padding-bottom: 16px;
   transition-property: color;
+}
+@media screen and (min-width: 768px) {
+  .connect .link {
+    padding: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .connect .link {
@@ -312,6 +344,13 @@ img {
 
 .search {
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .search {
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-top: 21px;
+  }
 }
 
 .header-icon {
@@ -1418,6 +1457,11 @@ img {
   margin-bottom: 40px;
   gap: 15px 8px;
 }
+@media screen and (min-width: 768px) {
+  .section-portfolio__button {
+    justify-content: center;
+  }
+}
 .section-portfolio__button .section-portfolio__btn-primary,
 .section-portfolio__button .section-portfolio__btn {
   padding: 6px 22px;
@@ -1507,6 +1551,12 @@ img {
 .section-portfolio__image {
   width: 100%;
   outline: 1px solid #eee;
+}
+
+@media screen and (min-width: 768px) {
+  .section-portfolio__image {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .section-portfolio__image:not(:last-child) {

@@ -46,6 +46,11 @@
     &:focus {
         color: var(--accent-hover-color);
     }
+
+         @media screen and (min-width: 768px) {
+            margin-right: 87px;
+         }
+
         @media screen and (min-width: 1200px) {
             padding: 24px 0;
         }
@@ -63,6 +68,11 @@
 .navigation__list {    
     /* margin-left: 50px; */
     /* gap: 30px; */
+
+@media screen and (min-width: 768px) {
+       margin-right: auto;
+    }
+
     .link {
             display: block;
     
@@ -73,16 +83,19 @@
     
             transition-property: color;
 
+            @media screen and (min-width: 768px) {
+                    display: flex;
+                    @include font(14px, 1.14, 500, 0.02em);
+                    padding-top: 32px;
+                        padding-bottom: 32px;
+                }
+
             @media screen and (min-width: 1200px) {
                         padding-top: 32px;
                         padding-bottom: 32px;
-                    @include font(14px, 1.14, 500, 0.02em);
                 }
         }
 
-                @media screen and (min-width: 768px) {
-                    display: flex;
-                }
 }
 
 .link-padding {
@@ -148,11 +161,20 @@
         /* flex-direction: ; */
 @include font(34px, 1.17, 500, 0.02em);
 
+    @media screen and (min-width: 768px) {
+            display: block;
+        @include font(14px, 1.16, 500, 0.02em);
+        }
+
     .link {
             padding-top: 16px;
             padding-bottom: 16px;
     
             transition-property: color;
+
+            @media screen and (min-width: 768px) {
+                padding: 0;
+                }
 
             @media screen and (min-width: 1200px) {
                     padding-top: 32px;
@@ -172,6 +194,12 @@
 
 .search {
     margin-right: 50px;
+
+    @media screen and (min-width: 768px) {
+           margin-right: auto;
+           margin-bottom: 10px;
+           padding-top: 21px;
+        }
 }
 
 .header-icon {
@@ -200,7 +228,7 @@
     background-size: cover;
     align-items: baseline;
     justify-content: center;
-    
+
     @media screen and (max-width: 768px) {
             display: none;
         }
