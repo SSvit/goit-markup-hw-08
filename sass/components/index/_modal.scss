@@ -143,6 +143,10 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
         }
+
+                 @media screen and (max-width: 480px) {
+                     width: 50%;
+                 }
 }
 .modal-form__label {
     display: block;
@@ -218,6 +222,10 @@
 
     color: #757575;
 @include font(14px, 0.89, null, 0.03em);
+
+@media screen and (max-width: 1200px) {
+    @include font(12px, 1.16, null, 0.03em);
+    }
 }
 
 .check-link {

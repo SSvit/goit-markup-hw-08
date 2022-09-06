@@ -1079,6 +1079,11 @@ img {
   background-color: var(--accent-hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+@media screen and (max-width: 480px) {
+  .modal__btn-input {
+    width: 50%;
+  }
+}
 
 .modal-form__label {
   display: block;
@@ -1159,6 +1164,13 @@ img {
   font-size: 14px;
   line-height: 0.89;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1200px) {
+  .modal-checkbox__text {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .check-link {
