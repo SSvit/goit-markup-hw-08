@@ -15,16 +15,19 @@
         color: var(--primary-text-color);
 @include font(14px, 1.14, 700, 0.03em);
         text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {             
+                text-align: inherit;
+            }
     }
          
                  @media screen and (min-width: 768px) {
                      width: 768px;
                      list-style: none;
-                     align-items: center;
                  }
 
         @media screen and (min-width: 1200px) { 
-            width: 1200px;  
+            width: 100%;  
             //  list-style: none;
             //  align-items: center;
       }
@@ -63,9 +66,15 @@
         flex-basis: calc((100% - 90px) / 4);
             // flex-basis: calc((100% - 3 * 30px) / 4);     
         &::before {
-                width: 270px;
+                width: 100%;
             }
     }
+
+        @media screen and (max-width: 480px) {
+            &::before {
+                width: 100%;
+            }
+        }
                 
 }
 

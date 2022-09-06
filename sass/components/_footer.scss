@@ -99,6 +99,7 @@
      @media screen and (min-width: 768px) {
                 display: flex;
                 justify-content: space-around;
+                align-items: baseline;
             }
 
         @media screen and (min-width: 1200px) {
@@ -114,7 +115,10 @@
         margin-bottom: 60px;
 
         @media screen and (min-width: 768px) {
-                margin: auto;                
+                 padding-left: 76px;
+                 margin-bottom: 0;
+                 margin-right: auto;
+                // margin: auto;                
             }
 
         @media screen and (min-width: 1200px) {
@@ -124,7 +128,10 @@
      }
 
          .footer-come {
-            margin-right: auto;
+            @media screen and (min-width: 768px) {
+                    padding-right: 89px;
+                }
+            // margin-right: auto;
             margin-bottom: 0;
          }
 
@@ -229,7 +236,8 @@
                 .footer-online__input {
                    width: 358px;
                    padding-left: 16px;
-                   margin-right: 12px;             
+                   margin-right: 12px;     
+                   margin-bottom: 0;        
                  }
            }
 
