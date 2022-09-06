@@ -464,6 +464,7 @@ img {
 @media screen and (min-width: 768px) {
   .decstop-menu {
     display: flex;
+    align-items: baseline;
   }
 }
 /*------------------------ Секція 2 --------------------*/
@@ -1342,6 +1343,11 @@ img {
   justify-content: center;
   gap: 10px;
 }
+@media screen and (min-width: 10px) {
+  .footer-flex__list {
+    padding-left: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-flex__list {
     align-items: baseline;
@@ -1529,11 +1535,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 1200px) {
-  .section-portfolio__image {
-    width: calc((100% - 60px) / 3);
-  }
-}
 .section-portfolio__link-box {
   display: flex;
   flex-direction: column;
@@ -1559,6 +1560,11 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-portfolio__image {
+    width: calc((100% - 60px) / 3);
+  }
+}
 .section-portfolio__image:not(:last-child) {
   margin-bottom: 30px;
 }
